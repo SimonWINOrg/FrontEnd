@@ -11,7 +11,7 @@ const Events = () => {
     const [events, setEvents] = useState([])
 
     const getEvents = async () => {
-        const res = await fetch("https://localhost:7203/api/events") 
+        const res = await fetch("https://ventixeevents-webapp-fkhtcsc3c3hgaafa.swedencentral-01.azurewebsites.net") 
         
         if (res.ok) {
             const data = await res.json()

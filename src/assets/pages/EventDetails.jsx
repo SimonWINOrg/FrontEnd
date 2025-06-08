@@ -12,7 +12,7 @@ const EventDetails = () => {
 
     useEffect(() => {
       const fetchEvent = async () => {
-        const res = await fetch(`https://localhost:7203/api/events/${id}`)
+        const res = await fetch(`https://ventixeeventdetails-webapp-c6eygpf6dugmbyc0.swedencentral-01.azurewebsites.net/api/events/${id}`)
         if (res.ok) {
           const data = await res.json()
           setEvent(data)
