@@ -5,13 +5,12 @@ import PortalLayout from '../components/PortalLayout'
 
 
 
-// ersätt localhostlänk med api microservice 
 
 const Events = () => {
     const [events, setEvents] = useState([])
 
     const getEvents = async () => {
-        const res = await fetch("https://ventixeevents-webapp-fkhtcsc3c3hgaafa.swedencentral-01.azurewebsites.net") 
+        const res = await fetch("https://ventixeevents-webapp-fkhtcsc3c3hgaafa.swedencentral-01.azurewebsites.net/api/events") 
         
         if (res.ok) {
             const data = await res.json()
